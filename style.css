@@ -1,0 +1,30 @@
+.btn {
+  border: 1px solid #db4a3a;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px 10px;
+  color: #db4a3a;
+  font-size: 40px;
+  display: inline-block;
+  position: relative;
+  transition: all 0.5s ease 0s;
+  
+}
+.btn::after {
+  background: #db4a3a;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  z-index: -1;
+  transition: all 0.5s ease 0s;
+
+}
+.btn:hover {
+    color:aliceblue
+}
+.btn:hover::after {
+    width: 100%;
+}
